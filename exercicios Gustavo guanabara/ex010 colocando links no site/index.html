@@ -1,0 +1,68 @@
+1<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    <style>
+        body{
+            background-color: rgb(163, 103, 103);
+        }
+        /*a:link: Formata o estilo do link padrão;
+a:visited: Formata o estilo padrão do link;
+a:hover:  Formata o estilo do link quando o usuário passa o mouse sobre ele;
+a:active:  Formata o estilo do link ativo (clicado). 
+*/
+        a:link{
+            color: rgb(67, 165, 42);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:hover {        
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Voce pode <a href="https://www.instagram.com/" target="_self" rel="next">acessar o meu instagram</a></p>
+    <p>para acessar o canal do ninex no youtube clique <a href="https://www.youtube.com/c/ClipsdoNinextN%C3%A3oOficial">aqui</a></p>
+    <p>Voce tambem pode <a href="https://www.bet365.com/#/HO/" target="_blank " rel="external">acessar o site de aposta bet365</a></p>
+    <!--target="_blank " rel="external = Codigo usado para quando abrir o link abrir em 
+    uma aba nova... sem ele o link vai sobrepor o site-->
+
+    <!-- rel="external" =abrir link em uma nova janela
+         rel= "next" =continuar na mesma janela 
+         rel="nofollow" =qaundo o link for de alguma propaganda
+         rel="prev" =quando for um link anterios 
+         target="blank" =usado só para os links externos
+
+        <a> </a> tag a significa ancora, serve para colocar os links na pagina -->
+
+        <h1>Usando links internos</h1>
+        <p>Eta é a primeira pagina do site. Se vc quizer, pode acessar
+            tambem a minha <a href="pag002.html" rel="next">segunda pagina</a>
+        </p>
+<p>voce tambem pode acessar a nossa <a href="noticias/pag003.html" rel="next">pagina de noticias</a></p>
+
+<h1>links para download</h1>
+<ul>
+    <li><a href="livro/historico-ensino-medio.pdf" download="historico-ensino-medio" type="application/pdf">Baixar o livro em pdf</a></li>
+    <li><a href="livro/favicon_io.zip" type="application/zip">Baixar o arquivo compaquitado zip</a></li>
+</ul>
+
+</body>
+</html>

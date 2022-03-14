@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com imagens</title>
+    <style>
+        img{
+            width: 200px; /*define largura*/
+             /*define altura */
+        }
+        div.red{
+            border: 2px solid rgb(201, 21, 21);
+            width: 200px;
+        }
+        div.blue{
+            border: 2px solid rgb(25, 5, 201);
+            width: 200px;
+        }
+        div.yellow{
+            border: 2px solid rgb(233, 229, 7);
+            width: 200px;
+        }
+        p{
+            font-variant: small-caps;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        figure{
+            display: block; /* esta propriedade em CSS faz com o elemento figure fique sozinho na linha. */
+            margin-top: 50px;
+            margin-bottom: 80px;
+            margin-left: 340px;
+            margin-right: 300px;
+        }
+    </style>
+    <p></p>
+</head>
+<body>
+    <h1>Testando carga e Imagens</h1>
+    <p>Abaixo vera uma imagem q esta na minha pasta</p>
+    <figure><figcaption><div class="red"><img src="Html 5 200.png" alt="Logo html 5"></div></figcaption>Fig 1 html,, Aqui vai as informacoes da figura para a criacao de uma legenda da imagem</figure>
+    <p>Podemos tambem carregar imagens que estao em sub-pastas</p>
+    <figcaption><div class="blue"><img src="imagens/css-3 200.png" alt="Logo css3"></div></figcaption>Fig 2 css
+    <p>Também podemos carregar imagens externas</p>
+    <figcapition><div class="yellow"><img src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" alt="Logo JavaScript" height="200px"></div></figcapition>Fig 3 java script <!--URL-->
+</body>
+</html>
