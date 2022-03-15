@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatacoes background</title>
+    <style>
+        body{
+            background-image: url(instagran.png);
+            background-size: auto;
+        }
+        body{
+            background-image: url(instagran.png);
+            background-size: auto; /*auto, 100px 100px, 75px 75px, 10px 150px,200px,50%,100% 100%,cover,containinitial*/
+            background-attachment: fixed;
+            background-repeat: no-repeat; /* repeat, repeat-x, repeat-y, space, round, no-repeat*/
+            background-position: 10px 200px; /*left top,left center, left bottom, right top, right center, right bottom, center top, center center,center bottom,50% 50%,25% 75%,10px 200px,50px 50px,initial*/
+            background-origin: border-box; /*padding-box,border-box,content-box,initial*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>instagran</h1>
+    <p>O background-size
+        A propriedade background-size define o tamanho da imagem de fundo.
+        
+        Os valores aplicáveis à esta propriedade são: 
+        
+        auto: valor padrão (mesma largura e altura da imagem);
+        Length: width height: define um valor em pixel para a largura e altura. Se apenas um é definido, o segundo fica como auto;
+        %: define um valor em porcentagem para a largura e altura. Se apenas um é definido, o segundo fica como auto;
+        cover: encaixa a imagem no fundo, preenchendo todo o espaço, sem repetição (pode ser que a imagem não apareça toda) ;
+        contain: encaixa a imagem perfeitamente  no fundo da página;
+        initial: alor padrão (mesma largura e altura da imagem);
+        inherit: Herda a propriedade do elemento pai. </p>
+</body>
+</html>

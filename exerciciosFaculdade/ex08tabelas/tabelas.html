@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Tabelas em Html</title>
+</head>
+<style>
+    body{
+        background-color: rgba(20, 93, 117, 0.192);
+    }
+
+    table, th, td{
+        border: 1px solid black;
+        height: 40px;
+        width: 900px;
+    }
+    
+    table{
+        background-color:rgba(255, 145, 0, 0.281) ;
+        table-layout: auto;
+    }
+
+    tr{
+        text-align: center;
+    }
+
+    caption{
+        text-align: center;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: oblique;
+    }
+
+
+</style>
+<body>
+    <h2>Vertical headers: </h2>
+    <table> <!--Para criar as linhas da tabela-->
+        <caption>Legenda da tabela</caption>
+        <tr><!--linha 1 da tabela -->
+            <tr>
+                <th colspan="2">cabecalho de uma tabela e colspan = 2</th>
+            </tr>
+          <th>Meses</th>
+          <th>Despesas</th> <!--cabecalho da tabela, automaticamento fica em negrito-->
+        </tr>
+        <tr><!--linha 2 da tabela -->
+          <td>Janeiro</td>
+          <td>1.522</td> <!--conteudo da tabela -->
+        </tr>
+        <tr>
+            <td>Fevereiro</td>
+            <td>1.588</td>
+        </tr>
+      </table> 
+
+      <h2>Horizontal headers:</h2>
+<table>
+    <caption>Legenda da tabela</caption>
+  <tr>
+    <tr>
+        <th colspan="3">cabecalho de uma tabela e colspan = 3</th>
+    </tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>    
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>john.doe@example.com</td>    
+    <td>123-45-678</td>
+  </tr>
+</table>
+
+        <h2>Formatando um grupo de colunas</h2>
+<table>
+     <colgroup>
+    <col span="2" style="background-color:rgba(255, 72, 0, 0.514)">
+    <col style="background-color:yellow">
+  </colgroup>
+    <caption>Legenda da tabela</caption>
+  <tr>
+    <th rowspan="4">cabecalho de uma tabela com rowspan = 3</th>
+  </tr>
+  <tr>
+    <th>Name:</th>
+    <td>Thailan Mendes</td>
+  </tr>
+  <tr>
+    <th>Email:</th>  
+    <td>thailanmendes88@gmail.com/td>      
+  </tr>  
+  <tr>
+    <th>Phone:</th>
+    <td>(11)96761-0332</td>
+  </tr>
+</table>
+</body>
+</html>

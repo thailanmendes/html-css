@@ -1,0 +1,30 @@
+body  {  	
+    background: white; 
+        } 
+ #geral  {  	
+    width: 100%; 
+    height: 700px;
+    background: white;
+   }    
+ #topo  {  	
+    width: 100%; 
+    height:20%;
+    background: #0F0;  
+    }    
+ #lado  {  	
+    float: left;  	
+    width: 20%;  
+    height: 420px;
+    background: #CCC;  	
+    }    
+ #meio  {  	
+    width: 100%;  
+    height: 60%;
+    background: #00F;  	
+    }    
+ #rodape  {  	
+    width: 100%;  
+    height: 20%;	
+    background: #FF0;  
+    clear: both;/*com esta propriedade limpamos ambos os lados do elemento*/
+    }  
