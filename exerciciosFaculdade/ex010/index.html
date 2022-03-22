@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="teste.php" method="post" name="Meu formulario">
+        Login: <input type="text" name="login" maxlength="20">
+        Senha: <input type="password" name="senha" maxlength="8">
+
+        <br> Sexo:
+        <input type="radio" name="sexo" value="M">Masculino
+        <input type="radio" name="sexo" value="F">Feminimo
+        <br>
+        <input type="checkbox" name="email" checked>E-mail
+        <input type="checkbox" name="fone" checked>Telefone
+        <input type="checkbox" name="correio" checked>Correio
+
+        <input type="color" name="cor" value="#ff0000">
+
+        <input type="date" name="data">
+        <p>
+        Selecione uma data antes de 01/01/2011: <input type="date" name="data_2010" max="2010-12-31">
+        <p>
+        Selecione uma data depois de 01/01/2011:<input type="date" name="data_2012" max="2012-12-31">
+
+        Selecione uma data e um horário: <input type="datetime-local" name="data_hora_local">
+        <p>
+        Informe seu e-mail de contato: <input type="email" name="email">
+        <p>
+        Selecione o mes e ano de seu nascimento: <input type="month" name="nascimento">
+        <p>
+        Selecione um numero qualquer: <input type="number" name="numero" min="1" max="10">
+        </p>
+        De uma nota para nossos servicos: 0 <input type="range" name="satisfacao" min="1" max="10">10
+    </form>
+
+<!--type = 
+    text pra login, 
+    password pra senha, 
+    radio para criar determinada marcacao, exemplo de sexo M ou F, checkbox= pode marcas varias de uma vez, 
+    color = cria um campo de entrada que permite a seleção de uma cor
+    maxlength = quantidade de caracteres q poderão ser digitado
+    date= cria um campo de entrada com uma data por meio de digitação ou seleção por calendário
+    datetime-local= Cria um campo de entrada com data e hora, sem fuso horário
+    email= Cria um campo de entrada para e-mail
+    month= Cria um campo de entrada para selecionar um mês e ano
+    number= Cria um campo de entrada numérico. 
+    range= Cria uma entrada de controle deslizante numérico
+
+
+    pausa no input type search
+
+
+-->
+</body>
+</html>
