@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="teste.php" method="post" name="Meu formulario">
@@ -36,9 +37,28 @@
         Selecione um numero qualquer: <input type="number" name="numero" min="1" max="10">
         </p>
         De uma nota para nossos servicos: 0 <input type="range" name="satisfacao" min="1" max="10">10
+        <p>
+        Digite uma palavra chave para pesquisa: <input type="search" name="busca">
+        <p>
+        Informe seu telefone: <input type="tel" name="telefone" placeholder="123-45-678" required>
+        <p>
+        Informe a hora de seu voo: <input type="time" name="hora_voo">
+        <p>
+        Informe o endereco(URL) de seu webisite: <input type="url" name="site">
+        </p>
+        Selecione a semana do ano que deseja obter licenca: <input type="week" name="licenca">
+        </p>
+        Selecione um arquivo para envio: <input type="file" name="arquivo" >
+        </p>
+        Botao de teste <input type="button" value="clique aqui" onclick="heloo">
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        </p>
+        <input type="reset" value="Limpar dados">
+        </p>
+        <input type="submit" value="enviar formulario">
     </form>
 
-<!--type = 
+<!--input type = 
     text pra login, 
     password pra senha, 
     radio para criar determinada marcacao, exemplo de sexo M ou F, checkbox= pode marcas varias de uma vez, 
@@ -50,10 +70,15 @@
     month= Cria um campo de entrada para selecionar um mês e ano
     number= Cria um campo de entrada numérico. 
     range= Cria uma entrada de controle deslizante numérico
-
-
-    pausa no input type search
-
+    search= Cria uma entrada de campo de pesquisa
+    tel= Cria um campo de entrada para número de telefone
+    time= Cria um campo de entrada que permite a seleção de hora (sem fuso horário)
+    url= Cria um campo de entrada que devem conter um endereço url.
+    week= Cria um campo de entrada que permite selecionar uma semana e ano. .
+    file= Cria um campo de seleção de arquivo. 
+    button= Cria um botão nulo, sem ação.  Utilize o atributo value para determinar o nome do botão.
+    reset= Cria um botão de reinicialização do formulário (limpa todos os campos).Utilize o atributo value para determinar o nome do botão.
+    submit= Cria um botão de submissão do formulário. Utilize o atributo value para determinar o nome do botão.
 
 -->
 </body>

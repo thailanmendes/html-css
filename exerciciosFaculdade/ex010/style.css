@@ -1,0 +1,26 @@
+body{
+    background-color: lightgray;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset{
+    color: #000000a8;
+    padding:8px;
+    background: #72939727;
+    border:2px solid rgba(14, 14, 17, 0.473)
+}
+legend {
+    color:rgb(165, 37, 37); 
+    background-color: rgb(255, 255, 255);
+    padding:5px;
+    font-size:20px;
+    text-align:center;
+    font-style: italic;
+}
+input{
+    background:#CCC;
+    color:rgb(29, 82, 38);
+    font-weight: bold;
+ }
