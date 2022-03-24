@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propriedade transform</title>
+    <style> 
+        div {
+          width: 300px;
+          height: 100px;
+          background-color: yellow;
+          border: 1px solid black;
+          transform: translate(100px,100px);
+        }
+
+        .rotate {
+          transform: rotate(40deg);
+          margin: 100px;
+        }
+
+        .scale{
+            transform: scale(1,2);
+        }
+
+        .skewX{
+            position: absolute;
+            left: 100px;
+            transform: skewX(20deg);
+        }
+            
+        .skewY{
+            position: absolute;
+            right: 400px;
+            transform: skewY(20deg);
+        }
+
+        .skew{
+            margin-top: 100px;
+            margin-left: 100px;
+            transform: skew(20deg);
+        }
+
+        .matrix{
+            transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+        }
+
+    </style>
+</head>
+<body>
+    <div>transform: translate(100px,100px);</div>
+
+    <div class="rotate">transform: rotate(40deg);</div>
+
+    <div class="scale">transform: scale(1,2);</div>
+
+    <div class="skewX"> transform: skewX(20deg);</div>
+
+    <div class="skewY">transform: skewY(20deg);</div>
+
+    <div class="skew">transform: skew(20deg);</div>
+
+    <div class="matrix">transform: matrix(0.586,0.8,-0.8,0.586,40,30);</div>
+</body>
+</html>

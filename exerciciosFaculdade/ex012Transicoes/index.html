@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transicoes</title>
+    <style>
+        /* Elemento que vamos aplicar a transição */
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 4s; /* propriedade transition informando que será alterada a largura no tempo de 4 segundos*/
+
+        }
+        /* elemento div com o estado hover - mouse sobre - que ativará a transição até 800px de largura*/ 
+        div:hover {
+            width: 800px;
+        }
+
+         /* Elemento que vamos aplicar a transição */
+         #segundo {
+            width: 300px;
+            height: 200px;
+            background-color: #00F;
+            transition: width 2s, height 4s, transform 4s; 
+
+        }
+    
+        #segundo:active {  
+            width: 600px;
+            height: 500px;
+            transition: width 2s, height 4s;
+            transform: rotate(180deg);
+        }
+
+        img{
+            width: 150px;
+            height: 200px;
+            transition: width 2s, height 2s;
+        }
+
+        img:hover {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <div></div>
+    </p>
+    <div id="segundo"></div>
+    </p>
+    <img src="imagens/css-3 200.png" alt="teste">
+</body>
+</html>

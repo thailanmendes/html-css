@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacoes</title>
+    <style>
+        /* Código da animação */
+        @keyframes teste { /* criação do @keyframes com nome teste */
+                    from {background-color: #00F;float: left;}/* início da animação */
+                    to {background-color: #F00;float:right;}/* fim  da animação */
+                    }
+ 
+        /* Elemento que vamos aplicar a animação */
+            div {
+                    width: 300px;
+                    height: 200px;
+                    background-color: #00F;
+                    animation-name: teste;/* vinculação ao @keyframes pelo nome */
+                    animation-duration: 30s;/* tempo da animação */
+                }
+
+        /*Utilizando porcentagens*/
+        @keyframes teste2 { 
+                    0%   {background-color:#FF0; left:0px; top:0px;}/* posição inicial */
+                    25%  {background-color:#F00; left:400px; top:0px;}
+                    50%  {background-color:#0F0; left:400px; top:400px;}
+                    75%  {background-color:#F0F; left:0px; top:400px;}
+                    100% {background-color:#FF0; left:0px; top:0px;}/* volta a posição inicial  */
+                    }
+ 
+            .segundo {
+                    width: 300px;
+                    height: 200px;
+                    position: relative; /* definição da posição do elemento */             
+                    background-color: #00F;
+                    animation-name: teste2;/* vinculação ao @keyframes pelo nome */
+                    animation-duration: 10s;/* tempo da animação */
+                    animation-delay: 3s; /* delay para comecar a animacao*/
+                }
+
+        /*Definindo a repetição da animação*/
+        @keyframes teste3 { /* criação do @keyframes com nome teste */
+                    0%   {background-color:#FF0; left:0px; top:0px;width:300px;height:200px;}/* posição inicial */
+                    25%  {background-color:#F00; left:400px; top:0px;width:200px;height:100px;}
+                    50%  {background-color:#0F0; left:400px; top:400px;width:100px;height:50px;}
+                    75%  {background-color:#F0F; left:0px; top:400px;width:200px;height:100px;}
+                    100% {background-color:#FF0; left:0px; top:0px;width:300px;height:200px;}/* volta a posição inicial  */
+                    }
+ 
+            .terceiro {
+                    width: 300px;
+                    height: 200px;
+                    position: relative; /* definição da posição do elemento */
+                    background-color: #00F;
+                    animation-name: teste3;/* vinculação ao @keyframes pelo nome */
+                    animation-duration: 10s;/* tempo da animação */
+                    animation-delay: 5s;/* tempo de espera para iniciar a animação */
+                    animation-iteration-count: 2;/* define o número de vezes que a animação ocorrerá. Caso deseje que ela funcione infinitamente utilize o valor infinite */
+                }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    </p>
+    <div class="segundo"></div>
+    </p>
+    <div class="terceiro"></div>
+    </p>
+</body>
+</html>

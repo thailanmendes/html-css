@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacoes</title>
+    <style>
+            @keyframes teste4 { /* criação do @keyframes com nome teste */
+                    0%   {background-color:#FF0; left:0px; top:0px;width:300px;height:200px;}/* posição inicial */
+                    25%  {background-color:#F00; left:400px; top:0px;width:200px;height:100px;}
+                    50%  {background-color:#0F0; left:400px; top:400px;width:100px;height:50px;}
+                    75%  {background-color:#F0F; left:0px; top:400px;width:200px;height:100px;}
+                    100% {background-color:#FF0; left:0px; top:0px;width:300px;height:200px;}/* volta a posição inicial  */
+                    }
+ 
+            .quarto {
+                    width: 300px;
+                    height: 200px;
+                    position: relative; /* definição da posição do elemento */
+                    background-color: #00F;
+                    animation-name: teste4;/* vinculação ao @keyframes pelo nome */
+                    animation-duration: 4s;/* tempo da animação */
+                    animation-iteration-count: 2;/* define o número de vezes que a animação ocorrerá. Caso deseje que ela funcione infinitamente utilize o valor infinite */
+                    animation-direction: reverse;/* define o sentido da animação. Pode ser reverse ou alternate */
+                    }
+
+    </style>
+</head>
+<body>
+    <div class="quarto"></div>
+</body>
+</html>
