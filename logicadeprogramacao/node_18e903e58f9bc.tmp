@@ -1,0 +1,9 @@
+var nome = ['joão','maria','ana']
+var estado = ['Sao Paulo', 'Rj' , 'Bahia']
+var tel = [42213373 , 967610332, 32451207]
+
+//console.log(nome[1])
+
+for(var pos=0; pos <=nome.length; pos <=3) {
+    console.log(`${nome[0]} `)
+}
