@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align itens</title>
+    <style>
+        .container{
+            max-width:350px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: purple;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items:  flex-end;
+        }
+
+        .baseline{
+            align-items:  baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 500px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <section class="container center flex">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too the </div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too</div>
+        <div class="item">Lorem ipsum dol red push origin tooLorem ipsum dol red push origin  origin too </div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too</div>
+        <div class="item">Lorem ipsum dol red push origin tooLorem ipsum dol red um dol red push origin tooLorem ipsum dol red push origin too </div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too</div>
+        <div class="item">Lorem ipsum dol red push origin tooLorem ipsum dol red ush origin too </div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item"> <br> item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too</div>
+        <div class="item">Lorem ipsum dol red push origin tooLorem ipsum dol  </div>
+    </section>
+
+    <h1>column</h1>
+    <p>flex-start</p>
+    <section class="container flex-start column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too</div>
+        <div class="item">Lorem ipsum dol red push origin tooLorem ipsum dol red um dol red push origin tooLorem ipsum dol red push origin too </div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too</div>
+        <div class="item">Lorem ipsum dol red push origin tooLorem ipsum dol red ush origin too </div>
+    </section>
+
+    <p>center</p>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too the </div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="item"> <br> item 1</div>
+        <div class="item">Lorem ipsum dol red push origin too</div>
+        <div class="item">Lorem ipsum dol red push origin tooLorem ipsum dol  </div>
+    </section>
+
+    <p>alinhamento central à tela</p>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit elit.  alias,  quia ratione molestiae tenetur et autem, minus eum quas neque ex beatae? Molestiae, numquam! Ea odio excepturi quia.</div>
+    </section>
+</body>
+</html>

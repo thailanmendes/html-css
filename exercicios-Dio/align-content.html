@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align content</title>
+    <style>
+        .container{
+            height: 500px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0px 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">em ipsum dolor sit atur adipisicing elit. Voluptaquos evee qu</div>
+        <div class="item">mporibus sed corporis</div>
+        <div class="item">sapiente quos evenet! OLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor rLorem ipsum dolorLorem ipsum dolor</div>
+        <div class="item">sapiente quos evenie</div>
+        <div class="item">sapiente quos eveniet</div>
+        <div class="item">sapiente quose quos e</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">em ipsum dolor sit amet, consectetur adipisicing elit. Voluptaquos eveniente qunte qunte qu</div>
+        <div class="item">mporibus sed corporis e</div>
+        <div class="item">sapiente quos eveniet! OLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</div>
+        <div class="item">Lorem ipsum  ipipsum dolorLorem ipsum dolor</div>
+        <div class="item">sapiente quos evenie</div>
+        <div class="item">sapiente quos eveniet</div>
+        <div class="item">sapiente quose quos en</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">em ipsum dolor sit amet, consectetur adipisicing elit. Voluptaquos eveniente qunte qunte qu</div>
+        <div class="item">mporibus sed corporis e</div>
+        <div class="item">sapiente quos eveniet! OLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sitLo dolorLorem ipsum dolor</div>
+        <div class="item">sapiente quos evenie</div>
+        <div class="item">sapiente quos eveniet</div>
+        <div class="item">sapiente quose quos en</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">em ipsum dolor sit amet, consectetur adipisicing elit. Voluptaquos eveniente qunte qunte qu</div>
+        <div class="item">mporibus sed corporis e</div>
+        <div class="item">sapiente quos eveniet! OLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dLorem ipsum dolorLorem ipsum dolor</div>
+        <div class="item">sapiente quos evenie</div>
+        <div class="item">sapiente quos eveniet</div>
+        <div class="item">sapiente quose quos en</div>
+    </div>
+
+    <p>space-arount</p>
+    <div class="container space-around">
+        <div class="item">em ipsum dolor sit amet, consectetur adipisicing elit. Voluptaquos eveniente qunte qunte qu</div>
+        <div class="item">mporibus sed corporis e</div>
+        <div class="item">sapiente quos eveniet! OLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sitLripsum dor</div>
+        <div class="item">sapiente quos evenie</div>
+        <div class="item">sapiente quos eveniet</div>
+        <div class="item">sapiente quose quos en</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">em ipsum dolor sit amet, consectetur adipisicing elit. Voluptaquos eveniente qunte qunte qu</div>
+        <div class="item">mporibus sed corporis e</div>
+        <div class="item">sapiente quos eveniet! OLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</div>
+        <div class="item">Lorem ipsum dolor sitLripsum dor</div>
+        <div class="item">sapiente quos evenie</div>
+        <div class="item">sapiente quos eveniet</div>
+        <div class="item">sapiente quose quos en</div>
+    </div>
+</body>
+</html>
